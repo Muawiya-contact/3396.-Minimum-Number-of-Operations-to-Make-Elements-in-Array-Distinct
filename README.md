@@ -31,3 +31,50 @@ Return the **minimum number of operations** needed to make all elements in the a
 + After removing the first 3 → [4,2,3,3,5,7]
 
 + After removing the next 3 → [3,5,7] → All elements are distinct.
+
+### Example 2
+
+#### Input: nums = [4,5,6,4,4] 
+#### Output: 2 
+#### Explanation:
+
++ After removing first 3 → [4,4]
+
++ After removing all remaining → [] → Empty array is distinct.
+
+### Example 2
+
+#### Input: nums = [6,7,8,9] 
+#### Output: 0 
+#### Explanation:
+
++ All elements are already distinct.
+
+
+---
+
+## 🧠 Approach
+
+- Use a `while` loop to check if the array has duplicates.
+- If duplicates exist, remove the first 3 elements and count the operation.
+- Repeat until all elements are distinct (or array is empty).
+
+---
+
+## 🐍 Python Solution
+
+```python
+class Solution:
+    def minimumOperations(self, nums):
+        operations = 0
+
+        while len(nums) != len(set(nums)):
+            nums = nums[3:]  # Remove first 3 elements
+            operations += 1
+
+        return operations
+```
+## ✅ Constraints
++ 1 <= nums.length <= 100
+
++ 1 <= nums[i] <= 100
