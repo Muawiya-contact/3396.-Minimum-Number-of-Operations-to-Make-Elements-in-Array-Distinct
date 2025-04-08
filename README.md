@@ -1,6 +1,7 @@
 # 🧮 LeetCode 3396 - Minimum Number of Operations to Make Elements in Array Distinct
 
-This repository contains the Python solution for the LeetCode problem [3396. Minimum Number of Operations to Make Elements in Array Distinct ](https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/).
+This repository contains the Python solution for the LeetCode problem [3396. Minimum Number of Operations to Make Elements in Array Distinct ] 
+ by **Coding Moves**(https://leetcode.com/problems/minimum-number-of-operations-to-make-elements-in-array-distinct/).
 
 ---
 
